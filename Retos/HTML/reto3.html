@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="../JS/reto3.js"></script>
-    <div>
-        <input id="AA" type="number">
-        <select id="selecttest">
-            <option value="10">10%</option>
-            <option value="15">15%</option>
-            <option value="20">20%</option>
-        </select>
-        <button id="boton"></button>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/reto3.css">
+        <title>Reto 3</title>
+    </head>
+    <body>
+        <div class="todoDiv">
+            <h1>Calculadora de Propinas</h1>
+            <br>
+            <div class="linea1">
+                <input id="precioInput" type="number" min='0' autofocus>
+                <label> Porcentaje de propina: </label>
+                <select id="selectPropina">
+                    <option value="0.1">10%</option>
+                    <option value="0.15">15%</option>
+                    <option value="0.2" selected>20%</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <button id="botonCalcular" type="submit" onclick="submit()">Calcular</button>
+            </div>
+            <br>
+            <label id="propinaLabel" hidden>Propina: </label><br>
+            <label id="totalPagar" hidden>Total a pagar: </label>
+        </div>
+        <script src="../JS/reto3.js"></script>
+    </body>
 </html>
