@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAD7BB;
+}
+.brInput{
+    text-align: center;
+}
+#chkText{
+    position: relative;
+    top: 2px;
+    text-align: center;
+}
+#chkRangeI{
+    position: relative;
+    top: 3px;
+}
+#chkSelect{
+    position: relative;
+    top: 2px;
+}
+button{
+    position: relative;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%);
+}
+#all{
+    background-color: #FFF2D8;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 100px;
+    border: 2px solid;
+    border-radius: 12px;
+}
+#selectBR{
+    position: relative;
+    top: 0px;
+}
+#labelBR{
+    position: relative;
+    top:10px
+}
