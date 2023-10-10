@@ -1,0 +1,15 @@
+body {
+    background-color: #ADC178;
+}
+.todoDiv{
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 50px;
+    background-color: #DDE5B6;
+}
