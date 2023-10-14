@@ -10,35 +10,72 @@
 
 <body>
     <h1>Calculadora IMC</h1>
-    <form>
-        <label for="inName">Nombre</label>
-        <input type="text" id="inName" value="">
-        <br><br>
-        <label for="inWhe">Peso (kg)</label>
-        <input type="number" id="inWhe">
-        <br><br>
-        <label for="inHei">Altura (cm)</label>
-        <input type="number" id="inHei">
-        <br><br>
-        <label for="inAge">Edad</label>
-        <input type="number" id="inAge">
+    <form method="get">
+        <div>
+            <label for="inName">Nombre</label>
+            <input type="text" id="inName">
+            <br>
+            <label class="errorLabel" for="inName" id="errorName">Ingrese nombre</label>
+        </div>
+        <div>
+            <br>
+            <label for="inWe">Peso (kg)</label>
+            <input type="number" id="inWe">
+            <br>
+            <label class="errorLabel" for="inWe" id="errorWe">Ingrese peso</label>
+        </div>
+        <div>
+            <br>
+            <label for="inHei">Altura (cm)</label>
+            <input type="number" id="inHei" step=".01" min="0">
+            <br>
+            <label class="errorLabel" for="inHei" id="errorHei">Ingrese altura</label>
+        </div>
+        <div>
+            <br>
+            <label for="inAge">Edad</label>
+            <input type="number" id="inAge">
+            <br>
+            <label class="errorLabel" for="inAge" id="errorAge">Ingrese edad</label>
+        </div>
+        <div>
+            <br>
+            <label for="selGend">Género</label>
+            <select id="selGend">
+                <option value="0"></option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option>
+            </select>
+            <br>
+            <label class="errorLabel" for="selGend" id="errorGend">Ingrese género</label>
+        </div>
+        <div>
+            <br>
+            <label for="selAct">Actividad Fisica</label>
+            <select id="selAct">
+                <option value="0"></option>
+                <option value="1.2">Sedentario</option>
+                <option value="1.55">Moderado</option>
+                <option value="1.9">Activo</option>
+            </select>
+            <br>
+            <label class="errorLabel" for="selAct" id="errorAct">Ingrese actividad</label>
+        </div>
+        <br>
+        <button type="submit" id="btnCalcular" onclick="calcular(this.form);return false;">Calcular</button>
         <script src="../JS/reto4.js"></script>
-        <br><br>
-        <label for="selGend">Género</label>
-        <select id="selGend">
-            <option value="1">Masculino</option>
-            <option value="2">Femenino</option>
-        </select>
-        <br><br>
-        <label for="selAct">Actividad Fisica</label>
-        <select id="selAct">
-            <option value="1.2">Sedentario</option>
-            <option value="1.55">Moderado</option>
-            <option value="1.9">Activo</option>
-        </select>
-        <br><br>
     </form>
-    <button type="submit" id="btnCalcular">Calcular</button>
+    <div id=outDiv>
+        <h2 id="hResultados"></h2>
+        <label id="idEMC">IMC: </label> <label for="idIMC" id="outIMC"></label>
+        <br>
+        <label id="idClas">Clasificación: </label> <label for="idClas" id="outClas"></label>
+        <br>
+        <label id="idGED">Gasto Energético Diario: </label> <label for="idGED" id="outGED"></label>
+        <br>
+        <label id="idEN">Estado Nutricional: </label> <label for="idEN" id="outEN"></label>
+    </div>
 </body>
 
 </html>

@@ -1,23 +1,44 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
-    text-align: justify;
+    transform: translate(-50%, -50%);
+    width: max-content;
 }
-form{
-    display:flexbox;
+
+form {
+    padding: 35px;
+    display: flexbox;
+    border: 2px solid black;
+    line-height: 21px;
 }
-#btnCalcular{
+
+#btnCalcular {
     position: relative;
     left: 50%;
     transform: translate(-50%);
 }
 
-input{
-    float: right;
+.errorLabel {
+    color: red;
+    position: relative;
+    top: 3px;
+    border: 2px;
+    float:right;
+    line-height: 10px;
+    display: none;
 }
-select{
+
+#outDiv{
+    display: none;
+}
+
+input {
+    float:right
+}
+
+select {
+    width: 35%;
     float: right;
 }
