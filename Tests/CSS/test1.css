@@ -1,44 +1,77 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #EAD7BB;
+    background: bisque;
 }
-.brInput{
-    text-align: center;
-}
-#chkText{
-    position: relative;
-    top: 2px;
-    text-align: center;
-}
-#chkRangeI{
-    position: relative;
-    top: 3px;
-}
-#chkSelect{
-    position: relative;
-    top: 2px;
-}
-button{
-    position: relative;
-    left: 50%;
-    transform-origin: center;
-    transform: translate(-50%);
-}
+
 #all{
-    background-color: #FFF2D8;
+    width: max-content;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    padding: 100px;
-    border: 2px solid;
-    border-radius: 12px;
+    border: 0.125em solid;
+    border-radius: 2em;
+    padding: 3em;
 }
+
+#divAll{
+    display: grid;
+    column-gap: 1em;
+}
+
+#divOne{
+    display: grid;
+    column-gap: 1em;
+    column-width: auto;
+}
+
+.brInput{
+    grid-column: 1;
+    display: grid;
+    column-gap: 1em;
+    column-count: 3;
+}
+
+#nationInput{
+    display: grid;
+    grid-auto-flow: row;
+    grid-column: 2;
+    grid-row: span 2;
+}
+
+#nationLabel{
+    margin: auto;
+}
+#nationImage{
+    margin: auto;
+}
+
+#nationLabel{
+    grid-row: 1;
+}
+
+#inputOne{
+    margin-top:auto;
+    grid-row: 1;
+}
+
+#inputTwo{
+    margin-top: auto;
+    grid-row: 1;
+}
+
 #selectBR{
-    position: relative;
-    top: 0px;
+    margin-top: 1em;
 }
-#labelBR{
-    position: relative;
-    top:10px
+
+#chkText{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: span 2;
+}
+
+#submitButton{
+    display: flex;
+    margin: auto;
 }

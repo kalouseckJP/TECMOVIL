@@ -1,0 +1,8 @@
+header {
+    background-color: chartreuse;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+}

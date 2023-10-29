@@ -1,4 +1,12 @@
 const brs = [1.0, 1.3, 1.7, 2.0, 2.3, 2.7, 3.0, 3.3, 3.7, 4.0, 4.3, 4.7, 5.0, 5.3, 5.7, 6.0, 6.3, 6.7, 7.0, 7.3, 7.7, 8.0, 8.3, 8.7, 9.0, 9.3, 9.7, 10.0, 10.3, 10.7, 11.0, 11.3, 11.7];
+const nation = ['../img/USA_flag.png','../img/Germany_flag.png',
+                '../img/USSR_flag.png','../img/Britain_flag.png',
+                '../img/IJN_flag.png','../img/Italy_flag.png',
+                '../img/France_flag.png','../img/Sweden_flag.png',
+                '../img/Israel_flag.png']
+const alt = ["🇺🇸 USA", "🇩🇪 Alemania", "🇩🇪 USSR", "🇬🇧 Reino Unido",
+            "🇯🇵 Japón", "🇮🇹 Italia", "🇫🇷 Francia", "🇸🇪 Suecia",
+            "🇮🇱 Israel"]
 
 const teclaEnter = document.getElementsByClassName("brInput")[0];
 teclaEnter.addEventListener("keyup", ({key})=>{
@@ -36,6 +44,10 @@ function submit(){
         node.appendChild(document.createTextNode(brs[seleccionado]));
         document.querySelector('ul').appendChild(node)
     }
+    const img = document.getElementById('nationImage')
+    const count = Math.floor(Math.random()*nation.length)
+    img.src = nation[count]
+    img.alt = alt[count]
 }
 
 function removeIfExists (selector) {
