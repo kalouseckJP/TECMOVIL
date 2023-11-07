@@ -12,17 +12,20 @@ body{
     border: 0.125em solid;
     border-radius: 2em;
     padding: 3em;
+    background-color: beige;
 }
 
 #divAll{
     display: grid;
     column-gap: 1em;
+    
 }
 
 #divOne{
     display: grid;
     column-gap: 1em;
     column-width: auto;
+    
 }
 
 .brInput{
